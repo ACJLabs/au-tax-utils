@@ -1,0 +1,49 @@
+{
+  "name": "@acjlabs/au-tax-utils",
+  "version": "0.1.0",
+  "description": "Zero-dependency Australian ABN checksum validation and GST math (10% rate, inclusive/exclusive conversions, tax-invoice threshold).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "7.0.2"
+  },
+  "keywords": [
+    "australia",
+    "abn",
+    "gst",
+    "tax",
+    "invoice",
+    "validation",
+    "checksum"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acjlabs/au-tax-utils.git"
+  },
+  "homepage": "https://github.com/acjlabs/au-tax-utils#readme",
+  "bugs": {
+    "url": "https://github.com/acjlabs/au-tax-utils/issues"
+  },
+  "author": "Agentic Commerce Junction (ACJ) Labs <contact@acjlabs.com> (https://acjlabs.com)"
+}
